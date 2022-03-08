@@ -6,13 +6,10 @@
   <!-- Created by Niush Sitaula -->
         <title>GIG SLOTTHAI</title>
         <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
-
-    <link rel="stylesheet" href="css/style.css" />
-  
+   <link rel="stylesheet" href="css/style.css" />
  </head>
-  <body>
-      <div class="sticky">
-       <ul>
+  <body> <div class="sticky">
+ <ul>
   <li><a href="index.html">หน้าแรก</a></li>
   <li><a href="https://www.picz.in.th/?lang=th">อัพรูปเอาลิ้ง</a></li>
     <li><a href="https://developers.line.biz/flex-simulator/">ออกแบบ</a></li>
@@ -25,31 +22,32 @@
     </div>
   </li>
    <li class="dropdown">
-    <a href="javascript:void(0)" class="dropbtn">รวมเพจโกว</a>
+    <a href="javascript:void(0)" class="dropbtn">2 รูป </a>
     <div class="dropdown-content">
-      <a href="2.html">888winU</a>
-      <a href="#">ว่าง </a>
-      <a href="#">ว่าง </a>
+      <a href="2.html">แชร์  2  รูป </a>
+      <a href="21.html">แชร์  2  รูป </a>
+      <a href="22.html">แชร์  2  รูป </a>
     </div>
   </li>
    <li class="dropdown">
-    <a href="javascript:void(0)" class="dropbtn">รวมลิ้งโปรโมทเพจ</a>
+    <a href="javascript:void(0)" class="dropbtn">โปรโมทเพจ</a>
     <div class="dropdown-content">
       <a href="3.html">โปรโมทเพจ</a>
-      <a href="#">วาง</a>
-      <a href="#">ว่าง</a>
+      <a href="31.html">แชร์  3  รูป </a>
+      <a href="32.html">แชร์  3  รูป </a>
     </div>
   </li>
   <li><a href="gig.html">กำหนดเอง </a></li>
 </ul>
 </div>
-    <!-- แชร์  1  รูป  -->
-    <p>  แชร์   1  รูป </p>
-   <img src="img/home.png">
-  <!-- แชร์  1  รูป  -->
-  <button id="btnShare" onclick="sendShare()">แชร์ </button>
-  <button id="btnLogin" onclick="liff.login()">เข้าสู่ระบบ</button>
-  <button id="btnLogOut" onclick="logOut()">ออกจากระบบ</button>
+    <!-- แสดงหน้าเว็บ  -->
+    <p>โปรโมทเพจ</p>
+   <img src="img/home2.png">
+  
+  <!-- แสดงหน้าเว็บ  -->
+  <button id="btnShare" onclick="sendShare()">แชร์ ลืฟ</button>
+  <button id="btnLogin" onclick="liff.login()">Log In</button>
+  <button id="btnLogOut" onclick="logOut()">Log Out</button>
   <script src="https://static.line-scdn.net/liff/edge/2/sdk.js"></script>
   <script src="myscripts.js"></script>
   <script>
@@ -60,107 +58,115 @@
  "type": "flex",
  "altText": "slotthai",
  "contents":
+
+
+
 {
-  "type": "bubble",
-  "hero": {
-    "type": "image",
-    "size": "full",
-    "aspectRatio": "20:25",
-    "aspectMode": "cover",
-    "action": {
-      "type": "uri",
-      "uri": "https://liff.line.me/1656907941-LJw00vr3"
-    },
-    "url": "https://sv1.picz.in.th/images/2022/03/07/rsJ9Oz.jpg"
-  },
-  "body": {
-    "type": "box",
-    "layout": "vertical",
-    "contents": [
-      {
-        "type": "text",
-        "weight": "bold",
-        "size": "xl",
-        "text": "ปลอดภัย ไว้ใจได้",
-        "align": "center"
-      },
-      {
+  "type": "carousel",
+  "contents": [
+    {
+      "type": "bubble",
+      "body": {
         "type": "box",
-        "layout": "horizontal",
-        "margin": "lg",
-        "spacing": "sm",
+        "layout": "vertical",
         "contents": [
           {
-            "type": "text",
-            "text": "การันตีโดย ŠT💯™ ",
-            "align": "center"
+            "type": "image",
+            "url": "https://sv1.picz.in.th/images/2022/03/08/r2Q9Ie.jpg",
+            "size": "full",
+            "aspectMode": "cover",
+            "aspectRatio": "2:3.1",
+            "action": {
+            "type": "uri",
+            "uri": "https://liff.line.me/1656907941-bMEppoL7"
+            },
+            "gravity": "top"
+          },
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "text",
+                "text": "ปลอดภัย ไว้ใจได้ การันตีโดย ŠT💯™ ",
+                "align": "center",
+                "weight": "bold"
+              },
+              {
+                "type": "text",
+                "text": "ทีมแอดมิน ",
+                "align": "center",
+                "weight": "bold"
+              },
+              {
+                "type": "text",
+                "text": "กลุ่มต่อต้านเว็บโกงพนันออนไลน์",
+                "align": "center",
+                "weight": "bold"
+              }
+            ],
+            "backgroundColor": "#ffd70090"
           }
         ],
-        "alignItems": "center"
+        "paddingAll": "0px",
+        "backgroundColor": "#ffd70090"
       },
-      {
-        "type": "box",
-        "layout": "horizontal",
-        "margin": "lg",
-        "spacing": "sm",
-        "contents": [
-          {
-            "type": "text",
-            "text": "ทีมแอดมิน",
-            "align": "center"
-          }
-        ]
-      },
-      {
-        "type": "box",
-        "layout": "horizontal",
-        "margin": "lg",
-        "spacing": "sm",
-        "contents": [
-          {
-            "type": "text",
-            "text": " กลุ่มต่อต้านเว็บโกงพนันออนไลน์",
-            "align": "center"
-          }
-        ]
-      }
-    ]
-  },
-  "footer": {
-    "type": "box",
-    "layout": "horizontal",
-    "spacing": "sm",
-    "contents": [
-      {
-        "type": "button",
-        "style": "secondary",
-        "height": "sm",
-        "action": {
-          "type": "uri",
-          "label": "สมัคร",
-          "uri": "https://bit.ly/3KeIjXZ"
-        },
-        "adjustMode": "shrink-to-fit"
-      },
-      {
-        "type": "button",
-        "style": "primary",
-        "height": "sm",
-        "action": {
-          "type": "uri",
-          "label": "ติดต่อแอดมิน",
-          "uri": "https://lin.ee/AL4tSPm"
+      "styles": {
+        "footer": {
+          "backgroundColor": "#ffd700"
         }
-      },
-      {
-        "type": "spacer",
-        "size": "sm"
       }
-    ],
-    "flex": 0
-  }
+    },
+    {
+      "type": "bubble",
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "image",
+            "size": "full",
+            "aspectMode": "cover",
+            "aspectRatio": "2:3.1",
+            "gravity": "top",
+            "url": "https://sv1.picz.in.th/images/2022/03/08/rCAjrz.png"
+          }
+        ],
+        "paddingAll": "0px",
+        "backgroundColor": "#ffd70090"
+      },
+      "footer": {
+        "type": "box",
+        "layout": "horizontal",
+        "contents": [
+          {
+            "type": "button",
+            "action": {
+              "type": "uri",
+              "label": "สมัครคลิ๊ก",
+              "uri": "https://bit.ly/3qVZOWq"
+            },
+            "style": "primary",
+            "color": "#ffd700"
+          },
+          {
+            "type": "button",
+            "action": {
+              "type": "uri",
+              "label": "ติดต่อแอดมิน",
+              "uri": "https://bit.ly/3CijuHV"
+            },
+            "style": "primary"
+          }
+        ],
+        "backgroundColor": "#000000"
+      }
+    }
+  ]
 }
-
+ 
+ 
+ 
    }
              ])
       if (result) {
@@ -196,12 +202,7 @@
     }
     main()
   </script>
-<script type="text/javascript">
-   var uid = '349016';
-   var wid = '652633';
-   var pop_tag = document.createElement('script');pop_tag.src='//cdn.popcash.net/show.js';document.body.appendChild(pop_tag);
-   pop_tag.onerror = function() {pop_tag = document.createElement('script');pop_tag.src='//cdn2.popcash.net/show.js';document.body.appendChild(pop_tag)};
-</script>
     </body>
 </html>
+
 

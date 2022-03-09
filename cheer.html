@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0,viewport-fit=cover">
+  <!-- Created by Niush Sitaula -->
+        <title>GIG SLOTTHAI</title>
+        <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+   <link rel="stylesheet" href="css/style.css" />
+ </head>
+  <body> <div class="sticky">
+ <ul>
+  <li><a href="index.html">หน้าแรก</a></li>
+</ul>
+</div>
+    <!-- แสดงหน้าเว็บ  -->
+    <p>โปรโมทเพจ</p>
+   <img src="img/home2.png">
+  
+  <!-- แสดงหน้าเว็บ  -->
+  <button id="btnShare" onclick="sendShare()">แชร์ ลืฟ</button>
+  <button id="btnLogin" onclick="liff.login()">Log In</button>
+  <button id="btnLogOut" onclick="logOut()">Log Out</button>
+  <script src="https://static.line-scdn.net/liff/edge/2/sdk.js"></script>
+  <script src="myscripts.js"></script>
+  <script>
+    async function sendShare() {
+      const result = await liff.shareTargetPicker([
+                       
+ {  
+ "type": "flex",
+ "altText": "slotthai",
+ "contents":
+
+{
+  "type": "carousel",
+  "contents": [
+    {
+      "type": "bubble",
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "image",
+            "url": "https://sv1.picz.in.th/images/2022/03/09/r64sE2.jpg",
+            "size": "full",
+            "aspectMode": "cover",
+            "aspectRatio": "2:3.1",
+            "gravity": "top"
+          },
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "text",
+                "text": "การันตีโดย ŠT💯™",
+                "color": "#ffd700",
+                "align": "center",
+                "action": {
+                  "type": "uri",
+                  "label": "action",
+                  "uri": "https://liff.line.me/1656907941-g7Wnn5Nq"
+                }
+              },
+              {
+                "type": "text",
+                "text": "ทีมแอดมิน",
+                "color": "#ffd700",
+                "align": "center"
+              },
+              {
+                "type": "text",
+                "text": "กลุ่มต่อต้านเว็บโกงพนันออนไลน",
+                "color": "#ffd700",
+                "align": "center"
+              }
+            ],
+            "position": "absolute",
+            "offsetBottom": "0px",
+            "offsetStart": "0px",
+            "offsetEnd": "0px",
+            "backgroundColor": "#00000070",
+            "paddingAll": "20px",
+            "paddingTop": "18px"
+          }
+        ],
+        "paddingAll": "0px",
+        "backgroundColor": "#000000"
+      },
+      "footer": {
+        "type": "box",
+        "layout": "horizontal",
+        "contents": [
+          {
+            "type": "button",
+            "action": {
+              "type": "uri",
+              "label": "สมัครคลิ๊ก",
+              "uri": "https://bit.ly/3Anq5jr"
+            },
+            "color": "#000000"
+          },
+          {
+            "type": "button",
+            "action": {
+              "type": "uri",
+              "label": "ติดต่อแอดมิน",
+              "uri": "https://lin.ee/M2rDspm"
+            }
+          }
+        ],
+        "backgroundColor": "#ffd700"
+      }
+    },
+    {
+      "type": "bubble",
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "image",
+            "url": "https://sv1.picz.in.th/images/2022/03/09/r64sE2.jpg",
+            "size": "full",
+            "aspectMode": "cover",
+            "aspectRatio": "2:3.1",
+            "gravity": "top"
+          }
+        ],
+        "paddingAll": "0px",
+        "backgroundColor": "#000000"
+      },
+      "footer": {
+        "type": "box",
+        "layout": "horizontal",
+        "contents": [
+          {
+            "type": "button",
+            "action": {
+              "type": "uri",
+              "label": "แชร์คลิ๊ก",
+              "uri": "https://liff.line.me/1656907941-g7Wnn5Nq"
+            },
+            "color": "#ffffff"
+          }
+        ],
+        "backgroundColor": "#000000"
+      }
+    }
+  ]
+}
+ 
+ 
+ 
+   }
+             ])
+      if (result) {
+        alert(`[${result.status}] ส่งสำเร็จ`)
+      } else {
+        const [majorVer, minorVer, patchVer] = (liff.getLineVersion() || "").split('.');
+
+        if (minorVer === undefined) {
+          alert('ShareTargetPicker was canceled in external browser')
+          return
+        }
+
+        if (parseInt(majorVer) >= 10 && parseInt(minorVer) >= 10 && parseInt(patchVer) > 0) {
+          alert('การแชร์ถูก ยกเลิก')
+        }
+      }
+    }
+    function logOut() {
+      liff.logout()
+      window.location.reload()
+    }
+    async function main() {
+      await liff.init({ liffId: "1656907941-LJw00vr3" })
+      if (liff.isLoggedIn()) {
+        document.getElementById("btnShare").style.display = "block"
+        if (!liff.isInClient()) {
+          document.getElementById("btnLogOut").style.display = "block"
+        }
+      } else {
+          alert('กรุณา เข้าสู่ระบบ\n\n by แอดกิ๊ก')
+        document.getElementById("btnLogin").style.display = "block"
+      }
+    }
+    main()
+  </script>
+    </body>
+</html>

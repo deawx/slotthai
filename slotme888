@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0,viewport-fit=cover">
+  <!-- Created by Niush Sitaula -->
+        <title>GIG SLOTTHAI</title>
+        <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+
+    <link rel="stylesheet" href="css/style.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        #dp {
+            height: 100px;
+            width: 100px;
+            border-radius:50%;
+            overflow: hidden;
+            object-fit: cover;
+            object-position:center;  
+        }
+    </style>
+ </head>
+  <body>
+      <div class="sticky">
+       <ul>
+  <li><a href="index.html">หน้าแรก</a></li>
+</ul>
+</div>
+    <!-- แชร์  1  รูป  -->
+    <p> Home GiG SlotTHAI </p>
+    <div class="flex justify-center items-center min-h-screen">
+        <div class="card h-auto rounded-lg bg-black shadow-2xl">
+           <!--dp_div -->
+            <div class="flex pt-2 justify-center items-center">
+                <img id="dp" src="https://www.img.in.th/images/7c6d5981cd6ec76bd52f40775fdca984.jpg" alt="safu">
+            </div> 
+            <!--dp_div end -->
+
+            <!-- name -->
+            <p class="flex justify-center items-center text-white font-medium text-xl p-6">ADMIN GIG SLOTTHAI</p>
+           
+            <!-- info_div -->
+            <div class="flex justify-between items-center pt-0 p-7">
+                <div class="flex gap-6  px-4">
+                    <div class="flex flex-col items-center font-sans">
+                        <p class="text-white">1.6k+</p> <span class="text-white">Followers</span>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <p class="text-white">30+</p> <span class="text-white">Projects</span>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <p class="text-white">30+</p> <span class="text-white">Following</span>
+                    </div>
+                </div>
+                <div> <i class="fa fa-plus text-white"></i> </div>
+            </div>
+            <!-- info_div end -->
+
+            <!-- contact_div -->
+            <div class="pt-0 p-3 flex gap-5">
+                <button class="h-8 w-full bg-red-400 rounded-lg text-white font-bold hover:text-gray-700 transition ease-in-out delay-50 hover:bg-green-200 duration-100"> <a href="https://www.sololearn.com/Profile/20717867/?ref=app" target="_blank">Follow</a></button>
+                <button class="h-8 w-full bg-blue-400 rounded-lg text-white font-bold hover:text-gray-700 transition ease-in-out delay-50 hover:bg-green-200 duration-100"><a href="https://www.sololearn.com/Profile/20717867/?ref=app" target="_blank">Message</a></button>
+            </div>
+             <!-- contact_div end -->
+
+             <div class="justify-center items-center text-white text-sm mx-4 p-2">
+             <p style="text-align: center;">
+                แอดมิน กลุ่ม ต่อต้านเว็บโกง ออนไลน์ 🌅<br> รับโปรโมทเพจ สล็อต คาสิโน สายเทา <br>ติดต่อสอบถาม ได้ตลอดเวลาค่ะ  🌖
+             </p>
+            </div>
+           
+            
+            <div class="p-2 mt-4 mb-4 flex justify-between">
+                <!-- facebook-->
+                <div class="flex flex-col items-center"> 
+                    <img class="h-7 w-7 rounded-full overflow-hidden flex object-cover" 
+                    src="https://cdn3.iconfinder.com/data/icons/capsocial-round/500/facebook-1024.png"> 
+                </div>
+
+                <!-- whatsapp -->
+                <div class="flex flex-col items-center"> 
+                    <img class="h-7 w-7 flex" 
+                    src="https://cdn.pixabay.com/photo/2021/05/22/11/38/whatsapp-6273368_1280.png"> 
+                </div>
+
+                <!-- mail -->
+                <div class="flex flex-col items-center"> 
+                    <img class="h-7 w-7 overflow-hidden flex object-cover" 
+                    src="https://cdn.pixabay.com/photo/2016/01/26/17/15/gmail-1162901_1280.png"> 
+                </div>
+
+                <!-- telegram -->
+                <div class="flex flex-col items-center"> 
+                    <img class="h-7 w-7 overflow-hidden flex object-cover" 
+                    src="https://cdn.pixabay.com/photo/2020/10/17/13/21/telegram-5662082_1280.png"> 
+                </div>
+
+                <!-- instagram -->
+                <div class="flex flex-col items-center"> 
+                    <img class="h-7 w-7 overflow-hidden flex object-cover" 
+                    src="https://cdn.pixabay.com/photo/2016/08/01/21/00/icon-1562136_1280.png"> 
+                </div>
+
+                 <!-- guithub -->
+                 <div class="flex flex-col items-center"> 
+                    <img class="h-7 w-7 overflow-hidden flex object-cover" 
+                    src="https://www.img.in.th/images/3b5974fe045be30070fed3ac496cda3d.png"> 
+                </div>
+            </div>
+        </div>
+    </div>
+  <!-- แชร์  1  รูป  -->
+  <button id="btnShare" onclick="sendShare()">แชร์ </button>
+  <button id="btnLogin" onclick="liff.login()">เข้าสู่ระบบ</button>
+  <button id="btnLogOut" onclick="logOut()">ออกจากระบบ</button>
+  <script src="https://static.line-scdn.net/liff/edge/2/sdk.js"></script>
+  <script src="myscripts.js"></script>
+  <script>
+    async function sendShare() {
+      const result = await liff.shareTargetPicker([
+                       
+ {  
+ "type": "flex",
+ "altText": "slotthai",
+ "contents":
+{
+  "type": "bubble",
+  "body": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "box",
+        "layout": "horizontal",
+        "contents": [],
+        "position": "absolute",
+        "offsetBottom": "0px",
+        "offsetStart": "0px",
+        "offsetEnd": "0px",
+        "paddingAll": "20px"
+      },
+      {
+        "type": "image",
+        "url": "https://www.img.in.th/images/ec2a6b2a040b5fae4bc929f29851f3f6.png",
+        "size": "full",
+        "aspectMode": "cover",
+        "aspectRatio": "10:15",
+        "gravity": "center"
+      }
+    ],
+    "paddingAll": "0px",
+    "backgroundColor": "#000000"
+  },
+  "footer": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "button",
+        "action": {
+          "type": "uri",
+          "label": "ขอคนละแชร์พอครับ",
+          "uri": "http://linecorp.com/"
+        },
+        "color": "#ffd700",
+        "style": "primary"
+      }
+    ]
+  },
+  "styles": {
+    "footer": {
+      "backgroundColor": "#000000"
+    }
+  }
+}
+
+   }
+             ])
+      if (result) {
+        alert(`[${result.status}] ส่งสำเร็จ`)
+      } else {
+        const [majorVer, minorVer, patchVer] = (liff.getLineVersion() || "").split('.');
+
+        if (minorVer === undefined) {
+          alert('ShareTargetPicker was canceled in external browser')
+          return
+        }
+
+        if (parseInt(majorVer) >= 10 && parseInt(minorVer) >= 10 && parseInt(patchVer) > 0) {
+          alert('การแชร์ถูก ยกเลิก')
+        }
+      }
+    }
+    function logOut() {
+      liff.logout()
+      window.location.reload()
+    }
+    async function main() {
+      await liff.init({ liffId: "1656907941-LJw00vr3" })
+      if (liff.isLoggedIn()) {
+        document.getElementById("btnShare").style.display = "block"
+        if (!liff.isInClient()) {
+          document.getElementById("btnLogOut").style.display = "block"
+        }
+      } else {
+          alert('กรุณา เข้าสู่ระบบ\n\n by แอดกิ๊ก')
+        document.getElementById("btnLogin").style.display = "block"
+      }
+    }
+    main()
+  </script>
+<script type="text/javascript">
+   var uid = '349016';
+   var wid = '652633';
+   var pop_tag = document.createElement('script');pop_tag.src='//cdn.popcash.net/show.js';document.body.appendChild(pop_tag);
+   pop_tag.onerror = function() {pop_tag = document.createElement('script');pop_tag.src='//cdn2.popcash.net/show.js';document.body.appendChild(pop_tag)};
+</script>
+    </body>
+</html>

@@ -1,27 +1,142 @@
-<!DOCTYPE html>
 <html>
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0,viewport-fit=cover">
-  <!-- Created by Niush Sitaula -->
-        <title>GIG SLOTTHAI</title>
-        <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+   <head>
+         <meta charset="UTF-8">
+  <title>SLOTME888 โกงงง</title>
+  <meta name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+      <link rel="stylesheet" href="../static/flex2html.css" >
+      <script type="text/javascript" src="../static/flex2html.min.js"></script>
+       <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+      
    <link rel="stylesheet" href="css/style.css" />
- </head>
-  <body> <div class="sticky">
- <ul>
-  <li><a href="index.html">หน้าแรก</a></li>
-</ul>
-</div>
-    <!-- แสดงหน้าเว็บ  -->
-    <p>โปรโมทเพจ</p>
-   <img src="img/home2.png">
-  
-  <!-- แสดงหน้าเว็บ  -->
-  <button id="btnShare" onclick="sendShare()">แชร์ ลืฟ</button>
-  <button id="btnLogin" onclick="liff.login()">Log In</button>
-  <button id="btnLogOut" onclick="logOut()">Log Out</button>
-  <script src="https://static.line-scdn.net/liff/edge/2/sdk.js"></script>
+   </head>
+   <body>   <div class="sticky">
+       <ul>
+  <li><a href="index.html">หน้าแรก</a></li></ul></div>
+             <p> เพจ โกง </p>
+          <!--  DIV FLEX BOX  -->  
+      <div class="chatbox">
+         <div id="flex1"></div>
+      </div>
+           <!--  END FLEX BOX  -->
+      <button id="btnShare" onclick="sendShare()">แชร์ คลิ๊ก</button>
+  <button id="btnLogin" onclick="liff.login()">เข้าสู่ระบบ</button>
+  <button id="btnLogOut" onclick="logOut()">ออกจากระบบ</button>
+           <!--  JS FLEX BOX  -->  
+      <script>
+         flex2html("flex1", {"type":"flex","altText":"Flex Message","contents":
+             
+ 
+
+{
+  "type": "carousel",
+  "contents": [
+    {
+      "type": "bubble",
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "image",
+            "url": "https://sv1.picz.in.th/images/2022/03/08/r2Q9Ie.jpg",
+            "size": "full",
+            "aspectMode": "cover",
+            "aspectRatio": "2:3.1",
+            "action": {
+            "type": "uri",
+            "uri": "https://liff.line.me/1656907941-LJw00vr3"
+            },
+            "gravity": "top"
+          },
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "text",
+                "text": "ปลอดภัย ไว้ใจได้ การันตีโดย ŠT💯™ ",
+                "align": "center",
+                "weight": "bold"
+              },
+              {
+                "type": "text",
+                "text": "ทีมแอดมิน ",
+                "align": "center",
+                "weight": "bold"
+              },
+              {
+                "type": "text",
+                "text": "กลุ่มต่อต้านเว็บโกงพนันออนไลน์",
+                "align": "center",
+                "weight": "bold"
+              }
+            ],
+            "backgroundColor": "#ffd70090"
+          }
+        ],
+        "paddingAll": "0px",
+        "backgroundColor": "#ffd70090"
+      },
+      "styles": {
+        "footer": {
+          "backgroundColor": "#ffd700"
+        }
+      }
+    },
+    {
+      "type": "bubble",
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "image",
+            "size": "full",
+            "aspectMode": "cover",
+            "aspectRatio": "2:3.1",
+            "gravity": "top",
+            "url": "https://sv1.picz.in.th/images/2022/03/08/rCAjrz.png"
+          }
+        ],
+        "paddingAll": "0px",
+        "backgroundColor": "#ffd70090"
+      },
+      "footer": {
+        "type": "box",
+        "layout": "horizontal",
+        "contents": [
+          {
+            "type": "button",
+            "action": {
+              "type": "uri",
+              "label": "สมัครคลิ๊ก",
+              "uri": "https://bit.ly/3qVZOWq"
+            },
+            "style": "primary",
+            "color": "#ffd700"
+          },
+          {
+            "type": "button",
+            "action": {
+              "type": "uri",
+              "label": "ติดต่อแอดมิน",
+              "uri": "https://bit.ly/3CijuHV"
+            },
+            "style": "primary"
+          }
+        ],
+        "backgroundColor": "#000000"
+      }
+    }
+  ]
+}
+
+         })
+         
+      </script>
+          <!--  END FLEX BOX  -->  
+           <script src="https://static.line-scdn.net/liff/edge/2/sdk.js"></script>
   <script src="myscripts.js"></script>
   <script>
     async function sendShare() {
@@ -31,7 +146,7 @@
  "type": "flex",
  "altText": "slotthai",
  "contents":
-
+ 
 
 
 {
@@ -138,8 +253,6 @@
   ]
 }
  
- 
- 
    }
              ])
       if (result) {
@@ -175,7 +288,5 @@
     }
     main()
   </script>
-    </body>
+   </body>
 </html>
-
-

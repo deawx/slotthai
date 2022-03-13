@@ -1,0 +1,175 @@
+<html>
+   <head>
+         <meta charset="UTF-8">
+  <title>cano168 vdo</title>
+  <meta name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+      <link rel="stylesheet" href="../static/flex2html.css" >
+      <script type="text/javascript" src="../static/flex2html.min.js"></script>
+       <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+      
+   <link rel="stylesheet" href="css/style.css" />
+   </head>
+   <body>   <div class="sticky">
+       <ul>
+  <li><a href="index.html">หน้าแรก</a></li></ul></div>
+             <p> cano vip vdo </p>
+          <img src="https://gighomework.github.io/slotthai/img/vipvdo.png">
+      <button id="btnShare" onclick="sendShare()">แชร์ คลิ๊ก</button>
+  <button id="btnLogin" onclick="liff.login()">เข้าสู่ระบบ</button>
+  <button id="btnLogOut" onclick="logOut()">ออกจากระบบ</button>
+           
+         
+           <script src="https://static.line-scdn.net/liff/edge/2/sdk.js"></script>
+  <script src="myscripts.js"></script>
+  <script>
+    async function sendShare() {
+      const result = await liff.shareTargetPicker([
+                       
+ {  
+ "type": "flex",
+ "altText": "slotthai",
+ "contents":
+
+
+ 
+ {
+     
+  "type": "bubble",
+  "hero": {
+    "type": "video",
+    "url": "https://gighomework.github.io/slotthai/vdo/vipvdo.mp4",
+    "previewUrl":"https://gighomework.github.io/slotthai/img/vipvdo.png",
+      "altContent": {
+      "type": "image",
+      "size": "full",
+      "aspectRatio": "20:13",
+      "aspectMode": "cover",
+      "url": "https://gighomework.github.io/slotthai/img/vipvdo.png"
+    },
+    "action": {
+      "type": "uri",
+      "label": "More information",
+      "uri": "https://liff.line.me/1656907941-LJw00vr3"
+    },
+    "aspectRatio": "20:13"
+  },
+
+    
+ "body": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "text",
+        "weight": "bold",
+        "size": "xl",
+        "text": "ครบทุกวงจร จบในเว็บเดียว",
+        "align": "center"
+      },
+      {
+        "type": "text",
+        "weight": "bold",
+        "size": "xl",
+        "text": " เว็บไหนโบนัสแจกยาก",
+        "align": "center"
+      },
+      {
+        "type": "text",
+        "weight": "bold",
+        "size": "xl",
+        "text": "อย่าไปเล่น",
+        "align": "center"
+      },
+      {
+        "type": "text",
+        "weight": "bold",
+        "size": "xl",
+        "text": "มาเล่นเว็บนี้",
+        "align": "center"
+      },
+      {
+        "type": "text",
+        "weight": "bold",
+        "size": "xl",
+        "text": "รับรองไม่ทำให้ผิดหวัง",
+        "align": "center"
+      }
+    ],
+    "backgroundColor": "#ffd700a0"
+  },
+  "footer": {
+    "type": "box",
+    "layout": "vertical",
+    "spacing": "sm",
+    "contents": [
+      {
+        "type": "button",
+        "style": "primary",
+        "height": "sm",
+        "action": {
+          "type": "uri",
+          "label": "สมัคร คลิ๊ก",
+          "uri": "https://bit.ly/3BAYMTu"
+        },
+        "color": "#000000"
+      },
+      {
+        "type": "button",
+        "style": "primary",
+        "height": "sm",
+        "action": {
+          "type": "uri",
+          "label": "แชร์ต่อให้เพิ่อน",
+          "uri": "https://liff.line.me/1656907941-LJw00vr3"
+        }
+      }
+    ],
+    "flex": 0,
+    "backgroundColor": "#ffd700"
+  },
+  "styles": {
+    "body": {
+      "backgroundColor": "#ffd700a0"
+    }
+  }
+}
+ 
+ 
+   }
+             ])
+      if (result) {
+        alert(`[${result.status}] ส่งสำเร็จ`)
+      } else {
+        const [majorVer, minorVer, patchVer] = (liff.getLineVersion() || "").split('.');
+
+        if (minorVer === undefined) {
+          alert('ShareTargetPicker was canceled in external browser')
+          return
+        }
+
+        if (parseInt(majorVer) >= 10 && parseInt(minorVer) >= 10 && parseInt(patchVer) > 0) {
+          alert('การแชร์ถูก ยกเลิก')
+        }
+      }
+    }
+    function logOut() {
+      liff.logout()
+      window.location.reload()
+    }
+    async function main() {
+      await liff.init({ liffId: "1656907941-LJw00vr3" })
+      if (liff.isLoggedIn()) {
+        document.getElementById("btnShare").style.display = "block"
+        if (!liff.isInClient()) {
+          document.getElementById("btnLogOut").style.display = "block"
+        }
+      } else {
+          alert('กรุณา เข้าสู่ระบบ\n\n by แอดกิ๊ก')
+        document.getElementById("btnLogin").style.display = "block"
+      }
+    }
+    main()
+  </script>
+   </body>
+</html>

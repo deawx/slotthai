@@ -7,7 +7,7 @@ if ("serviceWorker" in navigator) {
 window.onload = () => {
   setTimeout(()=>{
     $(".loader-box").fadeOut(100);
-  },1000);
+  },100);
      $("#run").click(()=>{
        $(".pre-container").addClass("act");
         var res = document.getElementById("preview").contentWindow.document;

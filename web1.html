@@ -18,7 +18,7 @@
    <img src="https://gighomework.github.io/slotthai/img/pre.png">
   
   <!-- แสดงหน้าเว็บ  -->
-  <button id="btnShare" onclick="sendShare()">แชร์ ลืฟ</button>
+  <button id="btnShare" onclick="sendShare()">แชร์</button>
   <button id="btnLogin" onclick="liff.login()">Log In</button>
   <button id="btnLogOut" onclick="logOut()">Log Out</button>
   <script src="https://static.line-scdn.net/liff/edge/2/sdk.js"></script>
@@ -46,9 +46,40 @@
       "url": "https://gighomework.github.io/slotthai/img/pre.png"
     },
     "aspectRatio": "2:2.3"
+  },
+  "body": {
+    "type": "box",
+    "layout": "horizontal",
+    "contents": [
+      {
+        "type": "button",
+        "action": {
+          "type": "uri",
+          "label": "ติดต่อโฆษณา",
+          "uri": "http://linecorp.com/"
+        },
+        "style": "primary",
+        "color": "#00000000"
+      },
+      {
+        "type": "button",
+        "action": {
+          "type": "uri",
+          "label": "แชร์",
+          "uri": "http://linecorp.com/"
+        },
+        "style": "primary",
+        "color": "#ffffff00"
+      }
+    ],
+    "background": {
+      "type": "linearGradient",
+      "angle": "0deg",
+      "startColor": "#ffffff",
+      "endColor": "#ffd700"
+    }
   }
 }
- 
  
    }
              ])

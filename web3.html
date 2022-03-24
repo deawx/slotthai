@@ -8,14 +8,10 @@
         <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
    <link rel="stylesheet" href="css/style.css" />
  </head>
-  <body> <div class="sticky">
- <ul>
-  <li><a href="index.html">หน้าแรก</a></li>
-</ul>
-</div>
+  <body> 
     <!-- แสดงหน้าเว็บ  -->
-    <p>โปรโมทเพจ</p>
-   <img src="https://gighomework.github.io/slotthai/img/gothamxo5.png">
+    <p>มหาสนุก888</p>
+   <img src="https://gighomework.github.io/slotthai/img/nd.jpg">
   
   <!-- แสดงหน้าเว็บ  -->
   <button id="btnShare" onclick="sendShare()">แชร์ ลืฟ</button>
@@ -43,15 +39,20 @@
         "contents": [
           {
             "type": "image",
-            "url": "https://gighomework.github.io/slotthai/img/gothamxo5.png",
+            "url": "https://gighomework.github.io/slotthai/img/nd.jpg",
             "size": "full",
             "aspectMode": "cover",
-            "aspectRatio": "2:3.1",
+            "aspectRatio": "2:2.3",
             "gravity": "top"
           }
         ],
         "paddingAll": "0px",
-        "backgroundColor": "#000000"
+        "background": {
+          "type": "linearGradient",
+          "angle": "0deg",
+          "startColor": "#000000",
+          "endColor": "#ffffff"
+        }
       },
       "footer": {
         "type": "box",
@@ -62,20 +63,28 @@
             "action": {
               "type": "uri",
               "label": "สมัครคลิ๊ก",
-              "uri": "https://bit.ly/3MGp5fY"
+              "uri": "http://bit.ly/loginms888"
             },
-            "color": "#000000"
+            "color": "#00000000",
+            "style": "primary"
           },
           {
             "type": "button",
             "action": {
               "type": "uri",
               "label": "ติดต่อแอดมิน",
-              "uri": "https://bit.ly/3iP3XWC"
-            }
+              "uri": "https://lin.ee/65qFWLA"
+            },
+            "style": "primary",
+            "color": "#00000000"
           }
         ],
-        "backgroundColor": "#ffd700"
+        "background": {
+          "type": "linearGradient",
+          "angle": "0deg",
+          "startColor": "#730091",
+          "endColor": "#000000"
+        }
       }
     },
     {
@@ -86,15 +95,20 @@
         "contents": [
           {
             "type": "image",
-            "url": "https://gighomework.github.io/slotthai/img/gothamxo4.png",
+            "url": "https://gighomework.github.io/slotthai/img/nd.png",
             "size": "full",
             "aspectMode": "cover",
-            "aspectRatio": "2:3.1",
+            "aspectRatio": "2:2.3",
             "gravity": "top"
           }
         ],
         "paddingAll": "0px",
-        "backgroundColor": "#000000"
+        "background": {
+          "type": "linearGradient",
+          "angle": "0deg",
+          "startColor": "#000000",
+          "endColor": "#0000ff"
+        }
       },
       "footer": {
         "type": "box",
@@ -105,17 +119,22 @@
             "action": {
               "type": "uri",
               "label": "แชร์คลิ๊ก",
-              "uri": "https://liff.line.me/1656907941-LJw00vr3"
+              "uri": "https://liff.line.me/1656907941-ED0KK1mp"
             },
             "color": "#ffffff"
           }
         ],
-        "backgroundColor": "#000000"
+        "backgroundColor": "#000000",
+        "background": {
+          "type": "linearGradient",
+          "angle": "0deg",
+          "startColor": "#ffffff",
+          "endColor": "#000000"
+        }
       }
     }
   ]
-}
- 
+} 
  
  
    }
@@ -140,7 +159,7 @@
       window.location.reload()
     }
     async function main() {
-      await liff.init({ liffId: "1656907941-LJw00vr3" })
+      await liff.init({ liffId: "1656907941-ED0KK1mp" })
       if (liff.isLoggedIn()) {
         document.getElementById("btnShare").style.display = "block"
         if (!liff.isInClient()) {

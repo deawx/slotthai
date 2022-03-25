@@ -385,4 +385,13 @@ div.sticky {
 .active {
   display: block;
 }
-
+}
+.leftb{
+    align-items: left;
+}
+.rightb{
+   align-items: right; 
+}
+.middleb{
+   align-items: center; 
+}

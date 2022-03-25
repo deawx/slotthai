@@ -31,9 +31,9 @@
  "type": "flex",
  "altText": "slotthai",
  "contents":
-
 {
   "type": "bubble",
+  "size": "giga",
   "hero": {
     "type": "video",
     "url": "https://gighomework.github.io/slotthai/vdo/pro.mp4",
@@ -75,12 +75,16 @@
     ],
     "background": {
       "type": "linearGradient",
-      "angle": "0deg",
+      "angle": "45deg",
       "startColor": "#000ff0",
-      "endColor": "#000000"
+      "endColor": "#00ff00"
     },
     "backgroundColor": "#000000",
-    "height": "80px"
+    "height": "80px",
+    "action": {
+      "type": "uri",
+      "uri": "https://liff.line.me/1656907941-0PXOOMBP"
+    }
   }
 }
 
@@ -106,7 +110,7 @@
       window.location.reload()
     }
     async function main() {
-      await liff.init({ liffId: "1656907941-LJw00vr3" })
+      await liff.init({ liffId: "1656907941-0PXOOMBP" })
       if (liff.isLoggedIn()) {
         document.getElementById("btnShare").style.display = "block"
         if (!liff.isInClient()) {

@@ -32,23 +32,9 @@
  "altText": "slotthai",
  "contents":
 
- {
+{
   "type": "bubble",
   "size": "giga",
-  "header": {
-    "type": "box",
-    "layout": "horizontal",
-    "contents": [],
-    "height": "10px",
-    "maxHeight": "10px",
-    "alignItems": "center",
-    "background": {
-      "type": "linearGradient",
-      "angle": "0deg",
-      "startColor": "#000000",
-      "endColor": "#0000ff"
-    }
-  },
   "hero": {
     "type": "video",
     "url": "https://gighomework.github.io/slotthai/vdo/hubb.mp4",
@@ -57,20 +43,17 @@
       "type": "image",
       "size": "full",
       "aspectRatio": "1:1",
-      "aspectMode": "fit",
+      "aspectMode": "cover",
       "url": "https://gighomework.github.io/slotthai/vdo/hubb.png",
       "action": {
         "type": "uri",
         "label": "action",
         "uri": "https://liff.line.me/1656907941-GM2xx0Qe"
-      },
-      "gravity": "center",
-      "align": "center",
-      "animated": true
+      }
     },
     "aspectRatio": "1:1"
   },
-  "footer": {
+  "body": {
     "type": "box",
     "layout": "horizontal",
     "contents": [
@@ -82,7 +65,7 @@
           "uri": "https://bit.ly/3q7JmRO/"
         },
         "style": "primary",
-        "color": "#ffffff00"
+        "color": "#00000000"
       },
       {
         "type": "button",
@@ -97,19 +80,20 @@
     ],
     "action": {
       "type": "uri",
-      "label": "action",
       "uri": "https://liff.line.me/1656907941-GM2xx0Qe/"
     },
     "background": {
       "type": "linearGradient",
       "angle": "0deg",
-      "startColor": "#0000ff",
+      "startColor": "#ffffff",
       "endColor": "#000000"
-    },
-    "cornerRadius": "xs"
+    }
   }
 }
-   }
+
+
+
+    }
              ])
       if (result) {
         alert(`[${result.status}] ส่งสำเร็จ`)

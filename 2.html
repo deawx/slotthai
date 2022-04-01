@@ -6,47 +6,19 @@
   <!-- Created by Niush Sitaula -->
         <title>GIG SLOTTHAI</title>
         <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
-      
    <link rel="stylesheet" href="css/style.css" />
  </head>
-  <body>
-        <ul>
+  <body> <div class="sticky">
+ <ul>
   <li><a href="index.html">หน้าแรก</a></li>
-  <li><a href="https://www.picz.in.th/?lang=th">อัพรูปเอาลิ้ง</a></li>
-    <li><a href="https://developers.line.biz/flex-simulator/">ออกแบบ</a></li>
-   <li class="dropdown">
-    <a href="javascript:void(0)" class="dropbtn">1 รูป </a>
-    <div class="dropdown-content">
-      <a href="index.html">1 pic</a>
-      <a href="11.html">11 pic</a>
-      <a href="12.html">12 pic</a>
-    </div>
-  </li>
-   <li class="dropdown">
-    <a href="javascript:void(0)" class="dropbtn">2 รูป </a>
-    <div class="dropdown-content">
-      <a href="2.html">แชร์  2  รูป </a>
-      <a href="21.html">แชร์  2  รูป </a>
-      <a href="22.html">แชร์  2  รูป </a>
-    </div>
-  </li>
-   <li class="dropdown">
-    <a href="javascript:void(0)" class="dropbtn">3 รูป </a>
-    <div class="dropdown-content">
-      <a href="3.html">แชร์  3  รูป </a>
-      <a href="31.html">แชร์  3  รูป </a>
-      <a href="32.html">แชร์  3  รูป </a>
-    </div>
-  </li>
-  <li><a href="gig.html">กำหนดเอง </a></li>
 </ul>
-  <!-- แชร์  2  รูป  -->
-    <p>แชร์  2  รูป </p>
-   <img src="img/home2.png">
+</div>
+    <!-- แสดงหน้าเว็บ  -->
+    <p>Bensin</p>
+   <img src="https://gighomework.github.io/slotthai/vdo/ppo.png">
   
-  <!-- แชร์  2  รูป  -->
-
-  <button id="btnShare" onclick="sendShare()">แชร์ ลืฟ</button>
+  <!-- แสดงหน้าเว็บ  -->
+  <button id="btnShare" onclick="sendShare()">แชร์</button>
   <button id="btnLogin" onclick="liff.login()">Log In</button>
   <button id="btnLogOut" onclick="logOut()">Log Out</button>
   <script src="https://static.line-scdn.net/liff/edge/2/sdk.js"></script>
@@ -57,127 +29,64 @@
                        
  {  
  "type": "flex",
- "altText": "slotthai",
- "_comment1": "เอาโค้ดมาใส่ต่อ ข้างล่าง ",
+ "altText": "GiG slotthai",
  "contents":
- {
-  "type": "carousel",
-  "contents": [
-    {
-      "type": "bubble",
-      "hero": {
-        "type": "image",
-        "size": "full",
-        "aspectRatio": "20:22",
-        "aspectMode": "cover",
-        "url": "https://sv1.picz.in.th/images/2022/03/06/rAPSZV.md.jpg"
-      },
-      "body": {
-        "type": "box",
-        "layout": "vertical",
-        "spacing": "sm",
-        "contents": [
-          {
-            "type": "text",
-            "text": "เปลี่ยนข้อความครงนี้",
-            "wrap": true,
-            "weight": "bold",
-            "size": "xl",
-            "align": "center"
-          },
-          {
-            "type": "box",
-            "layout": "baseline",
-            "contents": []
-          }
-        ]
-      },
-      "footer": {
-        "type": "box",
-        "layout": "vertical",
-        "spacing": "sm",
-        "contents": [
-          {
-            "type": "button",
-            "style": "secondary",
-            "action": {
-              "type": "uri",
-              "label": "แชร์ต่อให้เพื่อน คลิ๊ก",
-              "uri": "https://liff.line.me/1656907941-QMMnn53v"
-            }
-          },
-          {
-            "type": "button",
-            "style": "primary",
-            "action": {
-            "type": "uri",
-              "label": "แอดไลน์ แอดมิน",
-              "uri": "https://lin.ee/yMxbqXT"
-            }
-          }
-        ]
-      }
+
+{
+  "type": "bubble",
+  "size": "mega",
+  "hero": {
+    "type": "video",
+    "url": "https://gighomework.github.io/slotthai/vdo/ppo.mp4",
+    "previewUrl": "https://gighomework.github.io/slotthai/vdo/ppo..png",
+    "altContent": {
+      "type": "image",
+      "size": "full",
+      "aspectRatio": "2:1.6",
+      "aspectMode": "fit",
+      "url": "https://gighomework.github.io/slotthai/vdo/ppo.png",
+      "animated": true
     },
-    {
-      "type": "bubble",
-      "hero": {
-        "type": "image",
-        "size": "full",
-        "aspectRatio": "20:22",
-        "aspectMode": "cover",
-        "url": "https://sv1.picz.in.th/images/2022/03/06/rAPSZV.md.jpg"
-      },
-      "body": {
-        "type": "box",
-        "layout": "vertical",
-        "spacing": "sm",
-        "contents": [
-          {
-            "type": "text",
-            "text": "เปลี่ยนข้อความครงนี้",
-            "wrap": true,
-            "weight": "bold",
-            "size": "xl",
-            "align": "center"
-          },
-          {
-            "type": "box",
-            "layout": "baseline",
-            "contents": []
-          }
-        ]
-      },
-      "footer": {
-        "type": "box",
-        "layout": "vertical",
-        "spacing": "sm",
-        "contents": [
-          {
-            "type": "button",
-            "style": "secondary",
-            "action": {
-              "type": "uri",
-              "label": "แชร์ต่อให้เพื่อน คลิ๊ก",
-              "uri": "https://liff.line.me/1656907941-QMMnn53v"
-            }
-          },
-          {
-            "type": "button",
-            "style": "primary",
-            "action": {
-              "type": "uri",
-              "label": "แอดไลน์ แอดมิน",
-              "uri": "https://lin.ee/yMxbqXT"
-            }
-          }
-        ]
+    "aspectRatio": "2:1.5"
+  },
+  "footer": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "text",
+        "text": "ติดต่อโฆษณา คลิ๊ก",
+        "weight": "bold",
+        "action": {
+          "type": "uri",
+          "label": "action",
+          "uri": "https://lin.ee/yMxbqXT"
+        },
+        "size": "xs",
+        "color": "#ffffff",
+        "align": "center",
+        "adjustMode": "shrink-to-fit"
       }
+    ],
+    "background": {
+      "type": "linearGradient",
+      "angle": "60deg",
+      "startColor": "#000000",
+      "endColor": "#000000",
+      "centerColor": "#ffdd0f"
+    },
+    "action": {
+      "type": "uri",
+      "uri": "https://liff.line.me/1656907941-LJw00vr3"
     }
-  ]
+  },
+  "styles": {
+    "hero": {
+      "backgroundColor": "#000000"
+    }
+  }
 }
- 
- 
- 
+
  
    }
              ])
@@ -216,5 +125,3 @@
   </script>
     </body>
 </html>
-
-  

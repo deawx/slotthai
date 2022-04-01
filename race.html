@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -14,11 +15,11 @@
 </ul>
 </div>
     <!-- แสดงหน้าเว็บ  -->
-    <p>โปรโมทเพจ</p>
-   <img src="https://gighomework.github.io/slotthai/img/race.png">
+    <p>Ben</p>
+   <img src="https://gighomework.github.io/slotthai/vdo/gigpo.png">
   
   <!-- แสดงหน้าเว็บ  -->
-  <button id="btnShare" onclick="sendShare()">แชร์ ลืฟ</button>
+  <button id="btnShare" onclick="sendShare()">แชร์</button>
   <button id="btnLogin" onclick="liff.login()">Log In</button>
   <button id="btnLogOut" onclick="logOut()">Log Out</button>
   <script src="https://static.line-scdn.net/liff/edge/2/sdk.js"></script>
@@ -29,117 +30,63 @@
                        
  {  
  "type": "flex",
- "altText": "slotthai",
+ "altText": "รับโปรโมทเว็บ สายเทา",
  "contents":
 
-
-
-{
-  "type": "carousel",
-  "contents": [
-    {
-      "type": "bubble",
-      "body": {
-        "type": "box",
-        "layout": "vertical",
-        "contents": [
-          {
-            "type": "image",
-            "url": "https://gighomework.github.io/slotthai/img/race.png",
-            "size": "full",
-            "aspectMode": "cover",
-            "aspectRatio": "2:3.1",
-            "action": {
-            "type": "uri",
-            "uri": "https://liff.line.me/1656907941-bMEppoL7"
-            },
-            "gravity": "top"
-          },
-          {
-            "type": "box",
-            "layout": "vertical",
-            "contents": [
-              {
-                "type": "text",
-                "text": "ปลอดภัย ไว้ใจได้ การันตีโดย ŠT💯™ ",
-                "align": "center",
-                "weight": "bold"
-              },
-              {
-                "type": "text",
-                "text": "ทีมแอดมิน ",
-                "align": "center",
-                "weight": "bold"
-              },
-              {
-                "type": "text",
-                "text": "กลุ่มต่อต้านเว็บโกงพนันออนไลน์",
-                "align": "center",
-                "weight": "bold"
-              }
-            ],
-            "backgroundColor": "#ffd70090"
-          }
-        ],
-        "paddingAll": "0px",
-        "backgroundColor": "#ffd70090"
-      },
-      "styles": {
-        "footer": {
-          "backgroundColor": "#ffd700"
-        }
-      }
+ {
+  "type": "bubble",
+  "size": "mega",
+  "hero": {
+    "type": "video",
+    "url": "https://gighomework.github.io/slotthai/vdo/gigpo.mp4",
+    "previewUrl": "https://gighomework.github.io/slotthai/vdo/gigpo..png",
+    "altContent": {
+      "type": "image",
+      "size": "full",
+      "aspectRatio": "2:2.8",
+      "aspectMode": "fit",
+      "url": "https://gighomework.github.io/slotthai/vdo/gigpo.png",
+      "animated": true
     },
-    {
-      "type": "bubble",
-      "body": {
-        "type": "box",
-        "layout": "vertical",
-        "contents": [
-          {
-            "type": "image",
-            "size": "full",
-            "aspectMode": "cover",
-            "aspectRatio": "2:3.1",
-            "gravity": "top",
-            "url": "https://sv1.picz.in.th/images/2022/03/08/rCag51.png"
-          }
-        ],
-        "paddingAll": "0px",
-        "backgroundColor": "#ffd70090"
-      },
-      "footer": {
-        "type": "box",
-        "layout": "horizontal",
-        "contents": [
-          {
-            "type": "button",
-            "action": {
-              "type": "uri",
-              "label": "สมัครคลิ๊ก",
-              "uri": "https://bit.ly/3Mi9sLH"
-            },
-            "style": "primary",
-            "color": "#ffd700"
-          },
-          {
-            "type": "button",
-            "action": {
-              "type": "uri",
-              "label": "ติดต่อแอดมิน",
-              "uri": "https://bit.ly/3KewIIr"
-            },
-            "style": "primary"
-          }
-        ],
-        "backgroundColor": "#000000"
+    "aspectRatio": "2:2.8"
+  },
+  "footer": {
+    "type": "box",
+    "layout": "horizontal",
+    "contents": [
+      {
+        "type": "text",
+        "text": "ติดต่อโฆษณา คลิ๊ก",
+        "weight": "bold",
+        "action": {
+          "type": "uri",
+          "label": "action",
+          "uri": "https://lin.ee/yMxbqXT"
+        },
+        "size": "xs",
+        "color": "#ff0000",
+        "align": "center",
+        "adjustMode": "shrink-to-fit"
       }
+    ],
+    "background": {
+      "type": "linearGradient",
+      "angle": "60deg",
+      "startColor": "#000000",
+      "endColor": "#000000",
+      "centerColor": "#ffffff"
+    },
+    "action": {
+      "type": "uri",
+      "uri": "https://liff.line.me/1656907941-LJw00vr3"
     }
-  ]
+  },
+  "styles": {
+    "hero": {
+      "backgroundColor": "#000000"
+    }
+  }
 }
- 
- 
- 
    }
              ])
       if (result) {
@@ -177,5 +124,3 @@
   </script>
     </body>
 </html>
-
-

@@ -178,6 +178,23 @@ function initImagePopup(elem){
 // Start popup image function
 initImagePopup(".img-container") // elem = image container
 </script>
-    
+    <script src="https://static.line-scdn.net/liff/edge/2/sdk.js"></script>
+  
+  <script>
+    async function main() {
+      await liff.init({ liffId: "1656907941-LJw00vr3" })
+      if (liff.isLoggedIn()) {
+        document.getElementById("follow").style.display = "block";
+         document.getElementById("msg").style.display = "block"
+        if (!liff.isInClient()) {
+          document.getElementById("btnLogOut").style.display = "block"
+        }
+      } else {
+        
+        document.getElementById("btnLogin").style.display = "block"
+      }
+    }
+    main()
+  </script>  
    </body> 
 </html>

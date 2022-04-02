@@ -9,7 +9,7 @@
 }   
 
 .main-heading{
-    color: #ffdd00;
+    color: #000000;
     font-weight:bold;
     font-family:"iannnnn-DOG";
     font-size:30px;
@@ -18,17 +18,16 @@
 }
 
 .button{
-    background-color:white;
+    background:white;
     font-family:"iannnnn-DOG";
     font-weight:bold;
     font-size:12px;
-    height:30px;   
-    width:110px;
+    height:40px;   
+    width:150px;
     margin-top:10px;
     margin-left:9px;
-    border-radius:13px; 
+    border-radius:30px; 
     border-width:0px;  
-    align-items: right;
 }
 
 .paragraph{
@@ -53,8 +52,7 @@
 }
 .container h1 {
   text-align: center;
-  margin-bottom: 30px;
-  font-weight: 500;
+  font-weight: 200;
 }
 .container h2 {
   font-weight: 500;
@@ -102,11 +100,33 @@
 
 .banner{
 text-align: center;
-z-index: 100;
-position: fixed;
-margin-top: 10px;;
+margin-top: 10px;
 }
   .main-header {
   text-align: center;
   
+}
+.images{
+    width:200px;
+    height: 200px;
+    align-items: center;
+    margin-left:80px;
+    margin-right:100px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.main-heading{
+    color: #ffdd00;
+    font-weight:bold;
+    font-family:"iannnnn-DOG";
+    font-size:30px;
+    margin:5px;  
+    margin-left:8px;  
+}
+h1,h2,h3,h3,h5{
+  font-family:"iannnnn-DOG";
+}
+h1{
+    color:#ff0000;
+    background: #000000a0;
 }

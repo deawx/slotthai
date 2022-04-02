@@ -1,4 +1,19 @@
-    @import url('https://fonts.googleapis.com/css2?family=Pattaya&display=swap');
+     @font-face {
+    font-family: 'fc_onigiri_outline_colorRg';
+    src: url('../fonts/fc_onigiri_outline_color-webfont.woff2') format('woff2'),
+         url('../fonts/fc_onigiri_outline_color-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}  
+@font-face {
+    font-family: 'torsilp-gimchiregular';
+    src: url('../fonts/torsilp-gimchi-webfont.woff2') format('woff2'),
+         url('../fonts/torsilp-gimchi-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
  .bens{
      position: fixed;
  }
@@ -12,13 +27,13 @@
         }
     body{
     background:#000;
-    font-family: 'Pattaya', sans-serif;  
+    font-family: 'fc_onigiri_outline_colorRg'; 
 }
 button { display: none;
     width: 80%; 
     background-color: #FFD200;
     border-radius: 80px 80px 80px;
-    font-family: 'Pattaya', sans-serif;
+    font-family: 'fc_onigiri_outline_colorRg';
     font-size: 20px;
     color: black;
     padding: 10px ; 
@@ -48,17 +63,17 @@ button { display: none;
     }
 }   
   h1{
-    font-family: 'Pattaya', sans-serif;
+    font-family: 'fc_onigiri_outline_colorRg';
     font-size: 5px;
     color: red;
 } 
   h2{
-    font-family: 'Pattaya', sans-serif;
+    
     font-size: 40px;
     color: white;
 }
   h3{
-    font-family: 'Pattaya', sans-serif;
+    font-family: 'torsilp-gimchiregular';
     font-size: 40px;
     color: blue;
 }

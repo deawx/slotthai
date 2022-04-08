@@ -29,129 +29,80 @@
                        
  {  
  "type": "flex",
- "altText": "slotthai",
+ "altText": "คิดถึงสลอต คิดถึงสลอตไทย",
  "contents":
 
-{
-  "type": "carousel",
-  "contents": [
-    {
-      "type": "bubble",
-      "body": {
+ {
+  "type": "bubble",
+  "hero": {
+    "type": "image",
+    "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/01_1_cafe.png",
+    "size": "full",
+    "aspectRatio": "20:13",
+    "aspectMode": "cover",
+    "action": {
+      "type": "uri",
+      "uri": "http://linecorp.com/"
+    }
+  },
+  "body": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "text",
+        "text": "ทดสอบนะจ๊ะ",
+        "align": "center"
+      },
+      {
         "type": "box",
         "layout": "vertical",
         "contents": [
           {
-            "type": "image",
-            "url": "https://gighomework.github.io/slotthai/img/4yum.png",
-            "size": "full",
-            "aspectMode": "cover",
-            "aspectRatio": "2:3.1",
-            "gravity": "top"
+            "type": "button",
+            "action": {
+              "type": "postback",
+              "label": "ลองกดสิ",
+              "data": "เทส",
+              "displayText": "ฉันคือโพสแบ็ค"
+            }
           },
-          {
-            "type": "box",
-            "layout": "vertical",
-            "contents": [
-              {
-                "type": "text",
-                "text": "การันตีโดย ŠT💯™",
-                "color": "#ffd700",
-                "align": "center",
-                "action": {
-                  "type": "uri",
-                  "label": "action",
-                  "uri": "http://linecorp.com/"
-                }
-              },
-              {
-                "type": "text",
-                "text": "ทีมแอดมิน",
-                "color": "#ffd700",
-                "align": "center"
-              },
-              {
-                "type": "text",
-                "text": "กลุ่มต่อต้านเว็บโกงพนันออนไลน",
-                "color": "#ffd700",
-                "align": "center"
-              }
-            ],
-            "position": "absolute",
-            "offsetBottom": "0px",
-            "offsetStart": "0px",
-            "offsetEnd": "0px",
-            "backgroundColor": "#00000070",
-            "paddingAll": "20px",
-            "paddingTop": "18px"
-          }
-        ],
-        "paddingAll": "0px",
-        "backgroundColor": "#000000"
-      },
-      "footer": {
-        "type": "box",
-        "layout": "horizontal",
-        "contents": [
           {
             "type": "button",
             "action": {
-              "type": "uri",
-              "label": "สมัครคลิ๊ก",
-              "uri": "https://bit.ly/3GEnNhm"
-            },
-            "color": "#000000"
+              "type": "datetimepicker",
+              "label": "อยากกดมากดฉัน",
+              "data": "hello",
+              "mode": "date"
+            }
           },
           {
             "type": "button",
             "action": {
               "type": "uri",
-              "label": "ติดต่อแอดมิน",
-              "uri": "https://bit.ly/3zgEbCM"
+              "label": "หรือให้ฉันกด",
+              "uri": "http://linecorp.com/"
+            }
+          },
+          {
+            "type": "button",
+            "action": {
+              "type": "message",
+              "label": "กดฉันสิ",
+              "text": "ฉันคือ เมสเสจ"
             }
           }
         ],
-        "backgroundColor": "#ffd700"
+        "action": {
+          "type": "postback",
+          "label": "ลองกด",
+          "data": "ลองสิ",
+          "displayText": "ฉันคือ โพสแบ็ค"
+        }
       }
-    },
-    {
-      "type": "bubble",
-      "body": {
-        "type": "box",
-        "layout": "vertical",
-        "contents": [
-          {
-            "type": "image",
-            "url": "https://sv1.picz.in.th/images/2022/03/09/ruqAtn.png",
-            "size": "full",
-            "aspectMode": "cover",
-            "aspectRatio": "2:3.1",
-            "gravity": "top"
-          }
-        ],
-        "paddingAll": "0px",
-        "backgroundColor": "#000000"
-      },
-      "footer": {
-        "type": "box",
-        "layout": "horizontal",
-        "contents": [
-          {
-            "type": "button",
-            "action": {
-              "type": "uri",
-              "label": "แชร์คลิ๊ก",
-              "uri": "https://liff.line.me/1656907941-VxvPP01X"
-            },
-            "color": "#ffffff"
-          }
-        ],
-        "backgroundColor": "#000000"
-      }
-    }
-  ]
-}
- 
+    ]
+  }
+}           
  
  
    }

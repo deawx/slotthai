@@ -8,13 +8,17 @@
         <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
    <link rel="stylesheet" href="css/style.css" />
  </head>
-  <body> 
+  <body> <div class="sticky">
+ <ul>
+  <li><a href="index.html">หน้าแรก</a></li>
+</ul>
+</div>
     <!-- แสดงหน้าเว็บ  -->
-    <p>มหาสนุก888</p>
-   <img src="https://gighomework.github.io/slotthai/img/nd.jpg">
+    <p>mummy</p>
+   <img src="https://gighomework.github.io/slotthai/vdo/22.png">
   
   <!-- แสดงหน้าเว็บ  -->
-  <button id="btnShare" onclick="sendShare()">แชร์ ลืฟ</button>
+  <button id="btnShare" onclick="sendShare()">แชร์</button>
   <button id="btnLogin" onclick="liff.login()">Log In</button>
   <button id="btnLogOut" onclick="logOut()">Log Out</button>
   <script src="https://static.line-scdn.net/liff/edge/2/sdk.js"></script>
@@ -25,117 +29,72 @@
                        
  {  
  "type": "flex",
- "altText": "slotthai",
+ "altText": "GiG ST รับโปรโมทเว็บคาสิโน",
  "contents":
 
-{
-  "type": "carousel",
-  "contents": [
-    {
-      "type": "bubble",
-      "body": {
-        "type": "box",
-        "layout": "vertical",
-        "contents": [
-          {
-            "type": "image",
-            "url": "https://gighomework.github.io/slotthai/img/nd.jpg",
-            "size": "full",
-            "aspectMode": "cover",
-            "aspectRatio": "2:2.3",
-            "gravity": "top"
-          }
-        ],
-        "paddingAll": "0px",
-        "background": {
-          "type": "linearGradient",
-          "angle": "0deg",
-          "startColor": "#000000",
-          "endColor": "#ffffff"
-        }
-      },
-      "footer": {
-        "type": "box",
-        "layout": "horizontal",
-        "contents": [
-          {
-            "type": "button",
-            "action": {
-              "type": "uri",
-              "label": "สมัครคลิ๊ก",
-              "uri": "http://bit.ly/loginms888"
-            },
-            "color": "#00000000",
-            "style": "primary"
-          },
-          {
-            "type": "button",
-            "action": {
-              "type": "uri",
-              "label": "ติดต่อแอดมิน",
-              "uri": "https://lin.ee/65qFWLA"
-            },
-            "style": "primary",
-            "color": "#00000000"
-          }
-        ],
-        "background": {
-          "type": "linearGradient",
-          "angle": "0deg",
-          "startColor": "#730091",
-          "endColor": "#000000"
-        }
-      }
+ {
+  "type": "bubble",
+  "size": "giga",
+  "hero": {
+    "type": "video",
+    "url": "https://gighomework.github.io/slotthai/vdo/22.mp4",
+    "previewUrl": "https://gighomework.github.io/slotthai/vdo/22.png",
+    "altContent": {
+      "type": "image",
+      "size": "full",
+      "aspectRatio": "2:1.3",
+      "aspectMode": "cover",
+      "url": "https://gighomework.github.io/slotthai/vdo/22.png"
     },
-    {
-      "type": "bubble",
-      "body": {
-        "type": "box",
-        "layout": "vertical",
-        "contents": [
-          {
-            "type": "image",
-            "url": "https://gighomework.github.io/slotthai/img/nd.png",
-            "size": "full",
-            "aspectMode": "cover",
-            "aspectRatio": "2:2.3",
-            "gravity": "top"
-          }
-        ],
-        "paddingAll": "0px",
-        "background": {
-          "type": "linearGradient",
-          "angle": "0deg",
-          "startColor": "#000000",
-          "endColor": "#0000ff"
-        }
+    "aspectRatio": "2:1.3"
+  },
+  "footer": {
+    "type": "box",
+    "layout": "horizontal",
+    "contents": [
+      {
+        "type": "button",
+        "action": {
+          "type": "uri",
+          "label": "สมัครคลิ๊ก",
+          "uri": "https://bit.ly/3u8YvFb"
+        },
+        "style": "link",
+        "height": "sm",
+        "margin": "none",
+        "adjustMode": "shrink-to-fit",
+        "gravity": "top",
+        "color": "#ffffff"
       },
-      "footer": {
-        "type": "box",
-        "layout": "horizontal",
-        "contents": [
-          {
-            "type": "button",
-            "action": {
-              "type": "uri",
-              "label": "แชร์คลิ๊ก",
-              "uri": "https://liff.line.me/1656907941-ED0KK1mp"
-            },
-            "color": "#ffffff"
-          }
-        ],
-        "backgroundColor": "#000000",
-        "background": {
-          "type": "linearGradient",
-          "angle": "0deg",
-          "startColor": "#ffffff",
-          "endColor": "#000000"
-        }
+      {
+        "type": "button",
+        "action": {
+          "type": "uri",
+          "label": "ติดต่อแอดมิน",
+          "uri": "https://bit.ly/3J94vlx"
+        },
+        "height": "sm",
+        "style": "link",
+        "margin": "none",
+        "adjustMode": "shrink-to-fit",
+        "gravity": "top",
+        "color": "#ffffff"
       }
+    ],
+    "background": {
+      "type": "linearGradient",
+      "angle": "60deg",
+      "startColor": "#000000",
+      "endColor": "#000000",
+      "centerColor": "#ff0000"
+    },
+    "action": {
+      "type": "uri",
+      "label": "action",
+      "uri": "https://liff.line.me/1656907941-LJw00vr3"
     }
-  ]
+  }
 } 
- 
  
    }
              ])
@@ -159,7 +118,7 @@
       window.location.reload()
     }
     async function main() {
-      await liff.init({ liffId: "1656907941-ED0KK1mp" })
+      await liff.init({ liffId: "1656907941-LJw00vr3" })
       if (liff.isLoggedIn()) {
         document.getElementById("btnShare").style.display = "block"
         if (!liff.isInClient()) {

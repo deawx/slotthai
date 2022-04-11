@@ -32,7 +32,6 @@
  "altText": "การตลาด ต้อง GiG ST",
  "contents":
 
-
 {
   "type": "bubble",
   "size": "giga",
@@ -54,32 +53,39 @@
     "layout": "horizontal",
     "contents": [
       {
-        "type": "button",
-        "action": {
-          "type": "uri",
-          "label": "สมัครคลิ๊ก",
-          "uri": "https://bit.ly/SLOTzombies"
-        },
-        "style": "link",
-        "height": "sm",
-        "margin": "none",
-        "adjustMode": "shrink-to-fit",
-        "gravity": "top",
-        "color": "#f00000"
+        "type": "box",
+        "layout": "horizontal",
+        "contents": [
+          {
+            "type": "button",
+            "action": {
+              "type": "uri",
+              "label": "สมัครคลิ๊ก",
+              "uri": "https://bit.ly/SLOTzombies"
+            },
+            "style": "link",
+            "height": "sm",
+            "margin": "none",
+            "adjustMode": "shrink-to-fit",
+            "gravity": "top",
+            "color": "#f00000"
+          }
+        ],
+        "background": {
+          "type": "linearGradient",
+          "angle": "70deg",
+          "startColor": "#000000",
+          "endColor": "#000000",
+          "centerColor": "#ffffff"
+        }
       }
     ],
-    "background": {
-      "type": "linearGradient",
-      "angle": "80deg",
-      "startColor": "#12c2e9",
-      "endColor": "#f64f59",
-      "centerColor": "#c471ed"
-    },
     "action": {
       "type": "uri",
       "label": "action",
       "uri": "https://liff.line.me/1656907941-LJw00vr3"
-    }
+    },
+    "backgroundColor": "#000000"
   }
 }
 

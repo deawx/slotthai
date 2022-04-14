@@ -14,11 +14,11 @@
 </ul>
 </div>
     <!-- แสดงหน้าเว็บ  -->
-    <p>โปรโมทเพจ</p>
-   <img src="https://gighomework.github.io/slotthai/img/4yum.png">
+    <p>โปร ซอมบี้</p>
+   <img src="https://gighomework.github.io/slotthai/vdo/Zombe1.jpg">
   
   <!-- แสดงหน้าเว็บ  -->
-  <button id="btnShare" onclick="sendShare()">แชร์ ลืฟ</button>
+  <button id="btnShare" onclick="sendShare()">แชร์</button>
   <button id="btnLogin" onclick="liff.login()">Log In</button>
   <button id="btnLogOut" onclick="logOut()">Log Out</button>
   <script src="https://static.line-scdn.net/liff/edge/2/sdk.js"></script>
@@ -29,80 +29,227 @@
                        
  {  
  "type": "flex",
- "altText": "สลอตไทย",
+ "altText": "slotthai",
  "contents":
 
- {
-  "type": "bubble",
-  "hero": {
-    "type": "image",
-    "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/01_1_cafe.png",
-    "size": "full",
-    "aspectRatio": "20:13",
-    "aspectMode": "cover",
-    "action": {
-      "type": "uri",
-      "uri": "http://linecorp.com/"
-    }
-  },
-  "body": {
-    "type": "box",
-    "layout": "vertical",
-    "contents": [
-      {
-        "type": "text",
-        "text": "ทดสอบนะจ๊ะ",
-        "align": "center"
-      },
-      {
+{
+  "type": "carousel",
+  "contents": [
+    {
+      "type": "bubble",
+      "body": {
         "type": "box",
-        "layout": "vertical",
+        "layout": "horizontal",
         "contents": [
           {
-            "type": "button",
-            "action": {
-              "type": "postback",
-              "label": "ลองกดสิ",
-              "data": "เทส",
-              "displayText": "ฉันคือโพสแบ็ค"
-            }
+            "type": "image",
+            "url": "https://gighomework.github.io/slotthai/vdo/alp.jpg",
+            "size": "full",
+            "aspectMode": "cover",
+            "aspectRatio": "2:2.5",
+            "gravity": "top"
           },
           {
-            "type": "button",
-            "action": {
-              "type": "datetimepicker",
-              "label": "อยากกดมากดฉัน",
-              "data": "hello",
-              "mode": "date"
-            }
+            "type": "box",
+            "layout": "horizontal",
+            "contents": [
+              {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "filler"
+                  },
+                  {
+                    "type": "box",
+                    "layout": "baseline",
+                    "contents": [
+                      {
+                        "type": "filler"
+                      },
+                      {
+                        "type": "text",
+                        "text": "สมัคร คลิ๊ก",
+                        "color": "#ffffff",
+                        "flex": 0,
+                        "offsetTop": "-2px",
+                        "margin": "none",
+                        "align": "center",
+                        "size": "xl",
+                        "adjustMode": "shrink-to-fit",
+                        "action": {
+                          "type": "uri",
+                          "uri": "http://linecorp.com/"
+                        }
+                      },
+                      {
+                        "type": "filler"
+                      }
+                    ],
+                    "spacing": "sm",
+                    "height": "30px"
+                  },
+                  {
+                    "type": "filler"
+                  }
+                ],
+                "borderWidth": "1px",
+                "cornerRadius": "10px",
+                "spacing": "sm",
+                "borderColor": "#ffffffaa",
+                "margin": "none",
+                "height": "45px",
+                "justifyContent": "center",
+                "alignItems": "center",
+                "action": {
+                  "type": "uri",
+                  "uri": "https://bit.ly/SLOTzombies"
+                }
+              }
+            ],
+            "position": "absolute",
+            "offsetBottom": "0px",
+            "offsetStart": "0px",
+            "offsetEnd": "0px",
+            "backgroundColor": "#03303A60",
+            "paddingAll": "10px",
+            "paddingTop": "10px",
+            "paddingBottom": "12px",
+            "paddingStart": "10px",
+            "paddingEnd": "15px"
           },
           {
-            "type": "button",
-            "action": {
-              "type": "uri",
-              "label": "หรือให้ฉันกด",
-              "uri": "http://linecorp.com/"
-            }
-          },
-          {
-            "type": "button",
-            "action": {
-              "type": "message",
-              "label": "กดฉันสิ",
-              "text": "ฉันคือ เมสเสจ"
-            }
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "text",
+                "text": "ผ่าน",
+                "color": "#000000",
+                "align": "center",
+                "size": "xs",
+                "offsetTop": "3px"
+              }
+            ],
+            "position": "absolute",
+            "cornerRadius": "20px",
+            "offsetTop": "18px",
+            "backgroundColor": "#aefd60",
+            "offsetStart": "18px",
+            "height": "25px",
+            "width": "53px"
           }
         ],
-        "action": {
-          "type": "postback",
-          "label": "ลองกด",
-          "data": "ลองสิ",
-          "displayText": "ฉันคือ โพสแบ็ค"
-        }
+        "paddingAll": "0px"
       }
-    ]
-  }
-}           
+    },
+    {
+      "type": "bubble",
+      "body": {
+        "type": "box",
+        "layout": "horizontal",
+        "contents": [
+          {
+            "type": "image",
+            "url": "https://gighomework.github.io/slotthai/vdo/alp1.jpg",
+            "size": "full",
+            "aspectMode": "cover",
+            "aspectRatio": "2:2.5",
+            "gravity": "top"
+          },
+          {
+            "type": "box",
+            "layout": "horizontal",
+            "contents": [
+              {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "filler"
+                  },
+                  {
+                    "type": "box",
+                    "layout": "baseline",
+                    "contents": [
+                      {
+                        "type": "filler"
+                      },
+                      {
+                        "type": "text",
+                        "text": "แชร์ คลิ๊ก",
+                        "color": "#ffffff",
+                        "flex": 0,
+                        "offsetTop": "-2px",
+                        "margin": "none",
+                        "align": "center",
+                        "size": "xl",
+                        "adjustMode": "shrink-to-fit",
+                        "action": {
+                          "type": "uri",
+                          "uri": "https://liff.line.me/1656907941-LJw00vr3"
+                        }
+                      },
+                      {
+                        "type": "filler"
+                      }
+                    ],
+                    "spacing": "sm",
+                    "height": "30px"
+                  },
+                  {
+                    "type": "filler"
+                  }
+                ],
+                "borderWidth": "1px",
+                "cornerRadius": "10px",
+                "spacing": "sm",
+                "borderColor": "#ffffffaa",
+                "margin": "none",
+                "height": "45px",
+                "justifyContent": "center",
+                "alignItems": "center"
+              }
+            ],
+            "position": "absolute",
+            "offsetBottom": "0px",
+            "offsetStart": "0px",
+            "offsetEnd": "0px",
+            "backgroundColor": "#03303A60",
+            "paddingAll": "10px",
+            "paddingTop": "10px",
+            "paddingBottom": "12px",
+            "paddingStart": "10px",
+            "paddingEnd": "15px"
+          },
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "text",
+                "text": "ผ่าน",
+                "color": "#000000",
+                "align": "center",
+                "size": "xs",
+                "offsetTop": "3px"
+              }
+            ],
+            "position": "absolute",
+            "cornerRadius": "20px",
+            "offsetTop": "18px",
+            "backgroundColor": "#aefd60",
+            "offsetStart": "18px",
+            "height": "25px",
+            "width": "53px"
+          }
+        ],
+        "paddingAll": "0px"
+      }
+    }
+  ]
+}
+
  
  
    }

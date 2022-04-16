@@ -14,8 +14,8 @@
 </ul>
 </div>
     <!-- แสดงหน้าเว็บ  -->
-    <p>Bensin</p>
-   <img src="https://gighomework.github.io/slotthai/vdo/ppo.png">
+    <p>โกง ฟ็อก 888</p>
+   <img src="https://gighomework.github.io/slotthai/images/fox888.png">
   
   <!-- แสดงหน้าเว็บ  -->
   <button id="btnShare" onclick="sendShare()">แชร์</button>
@@ -32,61 +32,64 @@
  "altText": "GiG slotthai",
  "contents":
 
+
 {
   "type": "bubble",
-  "size": "mega",
-  "hero": {
-    "type": "video",
-    "url": "https://gighomework.github.io/slotthai/vdo/ppo.mp4",
-    "previewUrl": "https://gighomework.github.io/slotthai/vdo/ppo..png",
-    "altContent": {
-      "type": "image",
-      "size": "full",
-      "aspectRatio": "2:1.6",
-      "aspectMode": "fit",
-      "url": "https://gighomework.github.io/slotthai/vdo/ppo.png",
-      "animated": true
-    },
-    "aspectRatio": "2:1.5"
-  },
-  "footer": {
+  "size": "giga",
+  "body": {
     "type": "box",
     "layout": "vertical",
     "contents": [
       {
-        "type": "text",
-        "text": "ติดต่อโฆษณา คลิ๊ก",
-        "weight": "bold",
+        "type": "image",
+        "url": "https://gighomework.github.io/slotthai/images/fox888.png",
+        "size": "full",
+        "aspectMode": "cover",
+        "aspectRatio": "2:2.5",
+        "gravity": "center"
+      }
+    ],
+    "paddingAll": "0px"
+  },
+  "footer": {
+    "type": "box",
+    "layout": "horizontal",
+    "contents": [
+      {
+        "type": "button",
         "action": {
           "type": "uri",
-          "label": "action",
-          "uri": "https://lin.ee/yMxbqXT"
+          "label": "แชร์ คลิ๊ก",
+          "uri": "https://liff.line.me/1656907941-7gNDD0xM"
         },
-        "size": "xs",
+        "style": "link",
+        "color": "#ffffff"
+      },
+      {
+        "type": "button",
+        "action": {
+          "type": "uri",
+          "label": "แจ้งเพจโกง คลิ๊ก",
+          "uri": "https://lin.ee/sVQoXGF"
+        },
         "color": "#ffffff",
-        "align": "center",
-        "adjustMode": "shrink-to-fit"
+        "style": "link",
+        "adjustMode": "shrink-to-fit",
+        "gravity": "top"
       }
     ],
     "background": {
       "type": "linearGradient",
-      "angle": "60deg",
+      "angle": "50deg",
       "startColor": "#000000",
       "endColor": "#000000",
-      "centerColor": "#ffdd0f"
-    },
-    "action": {
-      "type": "uri",
-      "uri": "https://liff.line.me/1656907941-LJw00vr3"
-    }
-  },
-  "styles": {
-    "hero": {
-      "backgroundColor": "#000000"
+      "centerColor": "#00000070"
     }
   }
 }
 
+
+ 
  
    }
              ])
@@ -110,7 +113,7 @@
       window.location.reload()
     }
     async function main() {
-      await liff.init({ liffId: "1656907941-LJw00vr3" })
+      await liff.init({ liffId: "1656907941-7gNDD0xM" })
       if (liff.isLoggedIn()) {
         document.getElementById("btnShare").style.display = "block"
         if (!liff.isInClient()) {

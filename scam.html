@@ -14,8 +14,8 @@
 </ul>
 </div>
     <!-- แสดงหน้าเว็บ  -->
-    <p>joker</p>
-   <img src="https://gighomework.github.io/slotthai/vdo/joker.png">
+    <p>โกง</p>
+   <img src="https://gighomework.github.io/slotthai/vdo/โกง.jpeg">
   
   <!-- แสดงหน้าเว็บ  -->
   <button id="btnShare" onclick="sendShare()">แชร์</button>
@@ -32,44 +32,51 @@
  "altText": "500 แตกแสน ได้ม่ะ",
  "contents":
 
-
-{
+ {
   "type": "bubble",
   "hero": {
-    "type": "video",
-    "url": "https://gighomework.github.io/slotthai/vdo/joker.mp4",
-    "previewUrl": "https://gighomework.github.io/slotthai/vdo/joker.png",
-    "altContent": {
-      "type": "image",
-      "size": "full",
-      "aspectRatio": "20:29",
-      "aspectMode": "cover",
-      "url": "https://gighomework.github.io/slotthai/vdo/joker.png"
-    },
-    "aspectRatio": "20:29"
+    "type": "image",
+    "url": "https://gighomework.github.io/slotthai/vdo/โกง.jpeg",
+    "size": "full",
+    "aspectRatio": "2:2.5",
+    "aspectMode": "cover",
+    "action": {
+      "type": "uri",
+      "uri": "https://liff.line.me/1656907941-zKoRRZla"
+    }
   },
   "footer": {
     "type": "box",
     "layout": "vertical",
+    "spacing": "sm",
     "contents": [
       {
         "type": "text",
-        "text": "กลุ่มต่อต้านเว็บโกงพนันออนไลน",
-        "color": "#ff0000",
-        "align": "center"
+        "text": "แชร์",
+        "align": "center",
+        "color": "#ffffff",
+        "action": {
+          "type": "uri",
+          "label": "action",
+          "uri": "https://liff.line.me/1656907941-zKoRRZla"
+        }
       }
     ],
+    "flex": 0,
     "background": {
       "type": "linearGradient",
       "angle": "60deg",
-      "startColor": "#5433ff",
-      "endColor": "#a5fecb",
-      "centerColor": "#20bdff"
+      "startColor": "#000000",
+      "endColor": "#000000",
+      "centerColor": "#00000020"
+    }
+  },
+  "styles": {
+    "footer": {
+      "backgroundColor": "#00F5FF"
     }
   }
 }
- 
- 
  
    }
              ])
@@ -93,7 +100,7 @@
       window.location.reload()
     }
     async function main() {
-      await liff.init({ liffId: "1656907941-LJw00vr3" })
+      await liff.init({ liffId: "1656907941-zKoRRZla" })
       if (liff.isLoggedIn()) {
         document.getElementById("btnShare").style.display = "block"
         if (!liff.isInClient()) {
